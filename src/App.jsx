@@ -124,7 +124,7 @@ const C = {
   white:"#ffffff", offWhite:"#f7f9f7", gray:"#6b7280",
   grayLight:"#e5e7eb", dark:"#1a1f1a", text:"#1f2937",
 };
-const font = "\'Segoe UI\', system-ui, sans-serif";
+const font = "'Segoe UI', system-ui, sans-serif";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 function daysUntil(dateStr) {
