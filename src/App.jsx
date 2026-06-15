@@ -95,17 +95,17 @@ function Home({ user, setView }) {
   }, []);
   return (
     <div style={{ fontFamily: font }}>
-      <div style={{ position: "relative", minHeight: 460, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", textAlign: "center", color: "white", padding: "80px 24px 60px" }}>
+      <div style={{ position: "relative", minHeight: 460, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", textAlign: "center", color: "#1a1f1a", padding: "80px 24px 60px" }}>
         {CLOTHING.map((src, i) => (
-          <div key={i} style={{ position: "absolute", inset: 0, backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "center", opacity: i === idx ? 0.40 : 0, transition: "opacity 1.2s ease" }} />
+          <div key={i} style={{ position: "absolute", inset: 0, backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "center", opacity: i === idx ? 0.75 : 0, transition: "opacity 1.2s ease" }} />
         ))}
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(26,107,58,0.94),rgba(13,61,32,0.97))" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(255,255,255,0.82),rgba(240,217,138,0.75))" }} />
         <div style={{ position: "relative", zIndex: 1 }}>
-          <Logo size={110} />
-          <h1 style={{ fontSize: "clamp(38px,7vw,70px)", fontWeight: 900, margin: "20px 0 8px", letterSpacing: 3, fontFamily: "Georgia,serif", textShadow: "0 4px 24px rgba(0,0,0,0.6)", textTransform: "uppercase" }}>
-            ELITE <span style={{ color: "#c9a227" }}>PADEL</span> ACADEMY
+          <Logo size={160} />
+          <h1 style={{ fontSize: "clamp(36px,6vw,64px)", fontWeight: 900, margin: "20px 0 8px", letterSpacing: 2, fontFamily: "'Times New Roman', Georgia, serif", fontStyle: "italic", textShadow: "0 3px 16px rgba(0,0,0,0.25)", textTransform: "uppercase" }}>
+            ELITE <span style={{ color: "#1a6b3a" }}>PADEL</span> ACADEMY
           </h1>
-          <p style={{ fontSize: 18, color: "rgba(255,255,255,0.75)", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
+          <p style={{ fontSize: 18, color: "#4a5568", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
             Entrenamiento profesional · Metodologia de elite · Comunidad apasionada
           </p>
           {!user && (
